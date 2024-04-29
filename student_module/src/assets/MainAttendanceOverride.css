@@ -1,0 +1,147 @@
+/* ************************************************ */
+/* ************************************************ */
+/* ************************************************ */
+/* ************************************************ */
+
+/* closing date field */
+.nav-month-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  padding: 0.7em;
+  background: var(--blue-dark-0);
+}
+
+.change-date {
+  display: flex;
+  flex-direction: row;
+}
+
+.change-date b {
+  margin-right: 6px;
+}
+
+.change-date span {
+  cursor: pointer;
+  margin-right: 6px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.change-date span::after {
+  content: ",";
+}
+
+.change-date span:last-child::after {
+  content: "";
+}
+
+.absent-tile {
+  background-color: var(--red) !important;
+  color: var(--primary-fg) !important;
+}
+
+.present-tile {
+  background-color: var(--green) !important;
+  color: var(--primary-fg) !important;
+}
+
+.leave-tile {
+  background: var(--leave) !important;
+}
+
+/* ************************************************ */
+/* ************************************************ */
+/* ************************************************ */
+/* ************************************************ */
+
+/* override react-calendar defaults */
+#attendance .react-calendar {
+  width: 100%;
+  background: var(--secondary-bg);
+}
+
+#attendance .react-calendar__viewContainer {
+  background: var(--secondary-bg);
+}
+
+#attendance .react-calendar button {
+  margin: 1rem;
+  height: 5rem;
+  width: 5rem;
+  padding: 1rem;
+  margin-inline-start: 2.25rem !important;
+  margin-inline-end: 0.5rem !important;
+  padding-inline-start: 0 !important;
+  padding: 0 !important;
+  border-radius: 0.75rem;
+  color: var(--primary-fg);
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#attendance .react-calendar button abbr {
+  align-self: flex-start;
+  padding: 0.5rem;
+}
+
+#attendance .react-calendar__month-view__days {
+  width: 100%;
+  height: 100%;
+  display: grid !important;
+  grid-template-columns: repeat(7, 14.2%);
+}
+
+#attendance .react-calendar__tile {
+  max-width: initial !important;
+}
+
+#attendance .react-calendar__tile--range {
+  background: var(--accent-light) !important;
+}
+
+#attendance .react-calendar__tile:enabled:hover,
+#attendance .react-calendar__tile:enabled:focus {
+  background-color: var(--accent-light);
+}
+
+#attendance .react-calendar__tile {
+  background: var(--accent-extra-light);
+}
+
+#attendance
+  .react-calendar
+  .react-calendar__month-view__weekdays__weekday
+  abbr {
+  border: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600 !important;
+  opacity: 60%;
+  color: var(--primary-fg) !important;
+}
+
+#attendance
+  .react-calendar
+  .react-calendar__month-view__days__day--neighboringMonth {
+  color: var(--neighbour-day) !important;
+}
+
+#attendance .react-calendar__tile--active {
+  background: var(--accent-normal) !important;
+  color: var(--primary-bg) !important;
+}
+
+/* responsive */
+@media (min-width: 2048px) {
+  #attendance .react-calendar button {
+    margin-inline-start: 3rem !important;
+    margin-inline-end: 0.5rem !important;
+  }
+}

@@ -1,0 +1,68 @@
+/* Add this to your existing overrides */
+.react-calendar {
+  width: 90%;
+  margin-bottom: 0.5rem;
+}
+
+.react-calendar__viewContainer {
+  background: var(--bg-secondary);
+}
+
+.react-calendar button {
+  height: 2.25rem;
+  width: 2.25rem;
+  margin-inline-start: 0.75rem !important;
+  margin-inline-end: 0.5rem !important;
+  padding-inline-start: 0 !important;
+  padding: 0 !important;
+  border-radius: 100%;
+  color: var(--fg-primary);
+  font-size: 16px;
+}
+
+.react-calendar__month-view__days {
+  width: 100%;
+  height: 100%;
+  display: grid !important;
+  grid-template-columns: repeat(7, 14.2%);
+}
+
+.react-calendar__tile {
+  max-width: initial !important;
+}
+
+.react-calendar__tile--range {
+  background: var(--ac-secondary) !important;
+}
+
+.react-calendar__tile:disabled {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: transparent;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: transparent !important;
+}
+
+.react-calendar__tile,
+.react-calendar__tile--now,
+.react-calendar__tile--active {
+  background-color: transparent !important;
+  cursor: default !important;
+}
+
+.react-calendar .react-calendar__month-view__weekdays__weekday abbr {
+  border: none;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600 !important;
+}
+
+.react-calendar .react-calendar__month-view__days__day--neighboringMonth {
+  color: #868686 !important;
+}

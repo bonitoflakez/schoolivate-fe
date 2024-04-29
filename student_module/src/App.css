@@ -1,0 +1,53 @@
+button:focus,
+a:focus {
+  outline: none;
+}
+
+.icon {
+  color: var(--accent-normal);
+}
+
+/* Left Navbar */
+
+#left-navbar {
+  background: var(--secondary-bg);
+}
+
+#left-navbar .link:hover,
+#left-navbar .link:hover svg path {
+  color: var(--accent-dark) !important;
+  fill: var(--accent-dark) !important;
+}
+
+/* Common BGs */
+.performance-card,
+#notifications,
+#schoolwork,
+#tuition-taking,
+#meet-taking,
+#class-card,
+#class-details {
+  background: var(--blue-dark);
+}
+
+/* profile dropdown */
+
+#profile-dropdown ul li:hover {
+  background: var(--primary-bg);
+}
+
+/* ribbon */
+.ribbon {
+  --r: 0.8em;
+
+  padding-left: calc(var(--r) + 0.25em);
+  padding-right: calc(var(--r) + 0.25em);
+  line-height: 2;
+  clip-path: polygon(100vw 0, 0 0, var(--r) 50%, 0 100%, 100vw 100%);
+  border-image: conic-gradient(var(--accent-normal) 0 0) fill 0;
+  width: fit-content;
+  position: relative;
+  left: -1.5em;
+  border-radius: 10px;
+  color: var(--primary-bg);
+}

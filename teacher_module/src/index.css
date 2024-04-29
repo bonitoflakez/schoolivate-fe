@@ -1,0 +1,51 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  /* default colors */
+  --bg-primary: #FEFEFE;
+  --fg-primary: #060606;
+  --ac-primary: #CDC6F2;
+  --bg-secondary: #E7E7E7;
+  --fg-secondary: #020202;
+  --ac-secondary: #3E2F96;
+  
+  --green: #44A834;
+  --red: #D04343;
+  --yellow: #CDD043;
+  --star: #FFC403;
+  --dark-grey: #707070;
+}
+
+html,
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Readex Pro", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-primary);
+  color: var(--fg-primary);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent !important;
+}

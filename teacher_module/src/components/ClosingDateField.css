@@ -1,0 +1,53 @@
+.nav-month-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  padding: 0.7em;
+  background: var(--ac-secondary);
+}
+
+.change-date {
+  display: flex;
+  flex-direction: row;
+}
+
+.change-date b {
+  margin-right: 6px;
+}
+
+.change-date span {
+  cursor: pointer;
+  margin-right: 6px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.change-date span::after {
+  content: ",";
+}
+
+.change-date span:last-child::after {
+  content: "";
+}
+
+.absent-tile {
+  border: 2px solid var(--red) !important;
+  background-color: transparent !important;
+  color: var(--red) !important;
+}
+
+.present-tile {
+  border: 2px solid var(--green) !important;
+  background-color: transparent !important;
+  color: var(--green) !important;
+}
+
+.half-day-tile {
+  background: linear-gradient(to bottom,
+      var(--red) 50%,
+      var(--green) 50%) !important;
+  color: var(--bg-primary) !important;
+}

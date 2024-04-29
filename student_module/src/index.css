@@ -1,0 +1,89 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  /* bg color */
+  --primary-bg: #eeeeee;
+  --secondary-bg: #e7e7e7;
+
+  /* fg color */
+  --primary-fg: #121212;
+
+  /* accent color */
+  --accent-x-extra-light: #e7e5ee;
+  --accent-extra-light: #cbc4f1;
+  --accent-light: #b2a8eb;
+  --accent-normal: #5842d3;
+  --accent-dark: #3e2f96;
+
+  /* attendance */
+  --green: rgba(80, 186, 71, 0.25);
+  --red: rgba(186, 71, 71, 0.25);
+  --leave: rgb(27, 36, 49, 0.25);
+
+  --neighbour-day: rgb(27, 36, 49, 0.5);
+
+  /* misc/nav */
+  --nav-focused: #5842d3;
+  --nav-unfocused: #121212;
+
+  /* misc/bullet */
+  --pending: #f8bc48;
+
+  /* misc/pill color */
+  --green-pill: #50ba47;
+  --red-pill: #c00303;
+  --yellow-pill: #f8bc48;
+  
+  /* misc/shop-carousel-cards */
+  --carousel: #e9450075;
+
+  /* font size */
+  --font-xx-sm: 10px;
+  --font-x-sm: 12px;
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 20px;
+  --font-md-lg: 22px;
+  --font-xl: 24px;
+  --font-xxl: 42px;
+  --font-xxxl: 64px;
+
+  /* border */
+  --border: rgb(0, 0, 0, 0.5);
+
+  /* groups */
+  --message-card: rgb(203, 196, 241, 0.5);
+}
+
+body {
+  font-family: "Readex Pro", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--primary-bg);
+  color: var(--primary-fg);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent !important;
+}
+
+.active-tab,
+.active-tab svg path {
+  color: var(--accent-normal) !important;
+  fill: var(--accent-normal) !important;
+}

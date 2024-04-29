@@ -1,0 +1,10 @@
+/* navbar */
+
+#left-nav {
+  background: var(--bg-secondary);
+}
+
+#left-nav .message-bubble {
+  background: var(--ac-primary);
+  color: var(--fg-secondary);
+}
